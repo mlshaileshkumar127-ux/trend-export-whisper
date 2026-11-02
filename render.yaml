@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: trend-export-whisper
+    runtime: docker
+    plan: free
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: ACCESS_TOKEN
+        generateValue: true
